@@ -1,6 +1,13 @@
+@import url('./slider.css');
+@import url('./footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
 :root {
-	--rojo: #c203d3;
-	--fondo: #000;
+    /* Colors */
+    --green: #00a650;
+    --fondo: #140420;
+    --rojo: #ff0000;
+	--fontText: 'Send Flowers', cursive;
 }
 
 * {
@@ -11,7 +18,7 @@
 
 body {
 	background: var(--fondo);
-	font-family: 'Open Sans', sans-serif;
+	font-family: var(--fontText);
 }
 
 .contenedor {
@@ -29,11 +36,10 @@ header .contenedor {
 	align-items: center;
 }
 
-header .logotipo {
-	font-family: 'Bebas Neue', cursive;
-	font-weight: normal;
-	color: var(--rojo);
-	font-size: 40px;
+header #logotipo {
+	border-radius: 100%;
+	max-width:10rem;
+	box-shadow: rgba(0,0,0, 0.5);
 }
 
 header nav a {
@@ -103,6 +109,7 @@ header nav a.activo {
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
 	header .logotipo {
+		border-radius: 15rem;
 		margin-bottom: 10px;
 		font-size: 30px;
 	}
