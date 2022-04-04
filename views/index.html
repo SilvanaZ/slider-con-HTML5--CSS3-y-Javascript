@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+    </style>
+    <title>Namaste Pelis</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="/imgs/logo-NF.png" id="logotipo" />
+            <nav>
+                <a href="#" class="activo">Inicio</a>
+                <a href="#">Programas</a>
+                <a href="#">Películas</a>
+                <a href="#">Más Recientes</a>
+                <a href="#">Mi lista</a>
+                <a href="#">Novedades</a>
+                <hr />
+                <hr />
+                <hr />
+                <a href="logout.html">Cerrar sesión</a>
+                <i class="fa-solid fa-user"></i>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="pelicula-principal">
+            <div class="contenedor">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="/imgs/img5.jpg" style="width:40rem">
+
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/imgs/img1.webp" style="width:40rem">
+                        <div class="text">2</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="/imgs/img6.webp" style="width:40rem">
+                        <div class="text">3</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <h3 class="titulo">Namaste Films</h3>
+                <p class="descripcion">
+                    Vení a mirar todas tus péliculas favoritas y atrevete a maratonear tus series
+                </p>
+                <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+                <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+<footer>
+    <div class="footer-all">
+        <div class="icon-footer1">
+            <a href="#">
+                <i class="fab fa-cc-visa"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-cc-mastercard"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-cc-amex"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-bitcoin"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-paypal"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="info-footer">
+        <h3>Acerca de PuertoPC</h3>
+        <div class="text-footer1">
+            <a href="#">
+                <i class="fas fa-map-marked"></i>
+                Sucursales
+            </a>
+            <a class="subtext-footer" href="#">
+                ¿Quienes somos?
+            </a>
+        </div>
+    </div>
+
+    <div class="contact-footer">
+        <h3>Contáctenos</h3>
+        <div class="icon-footer2">
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <a class="text-footer2" href="#">
+            <i class="far fa-envelope" id="icon-email-footer"></i>
+            namaste.films@gmail.com
+        </a>
+
+    </div>
+    </div>
+    <div class="copyright-footer-box">
+        <p id="copyright-footer">
+            2022 ©️ Todos los derechos reservados
+        </p>
+    </div>
+</footer>
+
+</html>
